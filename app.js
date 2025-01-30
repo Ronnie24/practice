@@ -17,3 +17,4 @@ const obj = {
   pet: "Veiga",
 };
 console.log(obj.pet);
+console.log("Test merge");

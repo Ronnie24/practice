@@ -7,3 +7,5 @@ let fn = (n1, n2) => {
   return n1 + n2;
 };
 console.log(fn(1, 2));
+
+console.log("Did some other changes");

@@ -18,3 +18,4 @@ const obj = {
 };
 console.log(obj.pet);
 console.log("Test merge");
+console.log("Commit");

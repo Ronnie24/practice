@@ -19,3 +19,4 @@ const obj = {
 console.log(obj.pet);
 console.log("Test merge");
 console.log("Commit");
+console.log("This is commit for develop repo");

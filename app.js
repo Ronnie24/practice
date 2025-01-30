@@ -9,3 +9,12 @@ let fn = (n1, n2) => {
 console.log(fn(1, 2));
 
 console.log("Did some other changes");
+
+const obj = {
+  name: "Ronnie",
+  age: 18,
+  gender: "male",
+  pet: "Veiga",
+};
+console.log(obj.pet);
+console.log("Test merge");

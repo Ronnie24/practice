@@ -1,0 +1,52 @@
+As a junior fullstack developer, here are some essential CSS concepts and skills you should learn:
+
+1. **Basic Syntax and Selectors**:
+    - Understanding how to write CSS rules.
+    - Using different types of selectors (e.g., class, id, element, attribute).
+
+2. **Box Model**:
+    - Understanding the box model (content, padding, border, margin).
+    - How to use `box-sizing`.
+
+3. **Flexbox**:
+    - Creating flexible and responsive layouts using Flexbox.
+    - Understanding properties like `flex-direction`, `justify-content`, `align-items`, etc.
+
+4. **Grid Layout**:
+    - Creating complex layouts using CSS Grid.
+    - Understanding properties like `grid-template-columns`, `grid-template-rows`, `grid-area`, etc.
+
+5. **Responsive Design**:
+    - Using media queries to create responsive designs.
+    - Understanding mobile-first design principles.
+
+6. **Positioning**:
+    - Understanding different positioning methods (static, relative, absolute, fixed, sticky).
+
+7. **Typography**:
+    - Setting font properties (font-family, font-size, font-weight, line-height).
+    - Using web fonts.
+
+8. **Colors and Backgrounds**:
+    - Setting colors using different formats (hex, rgb, rgba, hsl).
+    - Using background properties (background-color, background-image, background-position, background-size).
+
+9. **Transitions and Animations**:
+    - Creating smooth transitions using `transition`.
+    - Creating animations using `@keyframes` and `animation`.
+
+10. **Pseudo-classes and Pseudo-elements**:
+     - Using pseudo-classes (e.g., `:hover`, `:focus`, `:nth-child`).
+     - Using pseudo-elements (e.g., `::before`, `::after`).
+
+11. **CSS Variables**:
+     - Using CSS custom properties (variables) for reusable values.
+
+12. **Preprocessors**:
+     - Basic understanding of CSS preprocessors like SASS or LESS (optional but useful).
+
+13. **Best Practices**:
+     - Writing maintainable and scalable CSS.
+     - Understanding the importance of specificity and inheritance.
+
+These are the foundational skills that will help you build and style web applications effectively.

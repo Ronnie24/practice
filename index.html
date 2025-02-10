@@ -88,7 +88,61 @@
       <input type="text" id="myname" name="inputName" />
       <label for="tele">Phone: </label
       ><input type="text" id="tele" name="telephone" />
-      <button type="submit">submit</button>
+      <button type="submit">submit</button> <br />
+      <label for="terms">Terms </label
+      ><input type="checkbox" id="terms" name="terms and condition" checked />
+      <br />
+      <label for="age">Age：</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="0"
+        max="150"
+        required
+        step="0.1"
+      />
+      <label for="passpord">Password: </label
+      ><input
+        type="password"
+        id="passpord"
+        minlength="5"
+        maxlength="15"
+        required
+      />
+      <br />
+      <!--radio单选 只有在几个选项的属性name一样时，才可以单选-->
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male"> Man</label>
+      <input type="radio" id="femal" name="gender" value="woman" />
+      <label for="male"> Woman</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="male"> Other</label> <br />
+      <!--input 一定要有name和value， 因为传到数据库后端需要name和value这两个属性，一般type为text时，可以不用设定value，value的值可以为input的值-->
+      <!-- <input type="range" min="0" max="100" step="1" name="range" value="" /> -->
+      <label for="pet">Pet: </label>
+      <select name="pet" id="pet" required>
+        <!--只有填写value之后，才会在提交表单时，把value的值提交到后台去，不然没有value，submit之后会提交一个空值-->
+        <option value=""></option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="fish">Fish</option></select
+      ><br />
+      <label for="country">Country</label>
+      <input list="countryLisht" type="text" name="country" id="country" />
+      <datalist id="countryLisht">
+        <option value="Mel">Melbourne</option>
+        <option value="Syd">Sydney</option>
+        <option value="Bri">Brisbane</option>
+      </datalist>
+      <br />
+      <label for="suggestion">Suggestion: </label><br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+      ></textarea>
     </form>
   </body>
 </html>

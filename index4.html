@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      #myid {
+        width: 100px;
+        height: 100px;
+      }
+      #thisID {
+        width: 250px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myid"
+      src="https://cdn-1.webcatalog.io/catalog/taobao/taobao-icon-filled-256.png?v=1740031887974tast"
+      alt="taobao"
+    />
+    <img
+      id="thisID"
+      src="https://cdn6.aptoide.com/imgs/5/6/a/56a3477b4eecaa3488d6630db58cccd2_fgraphic.png"
+      alt="price"
+    />
+    <form action="submit_form.php" method="get">
+      <p>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" />
+      </p>
+      <p>
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" />
+      </p>
+      <p>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" />
+      </p>
+
+      <p>
+        Gender: <label for="male">Male</label
+        ><input type="radio" name="gender" id="male" value="male" required />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </p>
+      <p>
+        Hobby: <input type="checkbox" id="gym" name="gym" />
+        <label for="gym">gym</label>
+        <input type="checkbox" name="reading" id="reading" />
+        <label for="reading">reading</label>
+        <input type="checkbox" name="gaming" id="gaming" />
+        <label for="gaming">gaming</label>
+      </p>
+      <p>
+        <label for="career">Job:</label>
+        <select name="career" id="career" required>
+          <option value="developer">Developer</option>
+          <option value="QA">QA</option>
+          <option value="Ops">Ops</option>
+        </select>
+      </p>
+      <p>
+        <label for="country">Country</label>
+        <input list="countryLisht" type="text" name="country" id="country" />
+        <datalist id="countryLisht">
+          <option value="Mel">Melbourne</option>
+          <option value="Syd">Sydney</option>
+          <option value="Bri">Brisbane</option>
+        </datalist>
+        <br />
+      </p>
+        <label for="terms"><h3>
+            Terms and Conditions
+          </h3>
+          <textarea name="terms" id="terms" placeholder="......." cols="30" rows="10"></textarea>
+        </label>
+      </p>
+      <p><input type="checkbox" name="conditions" id="conditions" required>
+        <label for="conditions">Conditions</label></p>
+        <p>
+            <button>Rest</button>
+            <button type="button" value="Submit">Submit</button>
+        </p>
+    </form>
+  </body>
+</html>

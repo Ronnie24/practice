@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      table {
+        margin: auto;
+      }
+      img {
+        /*图片尺寸可能不同，导致表格布局可能会不太整齐。可以统一设置*/
+        width: 100px;
+        height: 100px;
+        object-fit: cover; /* 让图片填充并保持比例 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fruit</h1>
+    <hr />
+    <table>
+      <tr>
+        <td>
+          <img
+            src="https://tgardenfruitnveg.com.au/wp-content/uploads/2020/08/6pro-2-1.png"
+            alt="Banana"
+          />
+        </td>
+        <td>
+          Name: Banana <br /><del>Original Price: $19.99</del><br />Now: $9.99
+        </td>
+        <td>
+          <img
+            src="https://dtgxwmigmg3gc.cloudfront.net/imagery/assets/derivations/icon/256/256/true/eyJpZCI6ImI1YWUzYjc0NGZmM2IwMDk2NDhiOWU2MjEwOWFhMmFiLmpwZyIsInN0b3JhZ2UiOiJwdWJsaWNfc3RvcmUifQ?signature=3e7a85e1689c509f7375eda6af9b985af007a8f01bed999a4b1a0b12c8eb7d6d"
+            alt="Pineapple"
+          />
+        </td>
+        <td>
+          Name: Pineapple <br /><del>Original Price: $9.99</del><br />Now: $5.99
+        </td>
+        <td>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI5Ynuf8KA7pdEwE2P-V-4LdEilJUOnX_V5w&s"
+            alt="Orange"
+          />
+        </td>
+        <td>
+          Name: Orange <br /><del>Original Price: $5.99</del><br />Now: $3.99
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://freshnta.com/storage/app/public/product/2023-05-28-64735949cb01b.png"
+            alt="Peach"
+          />
+        </td>
+        <td>
+          Name: Peach <br /><del>Original Price: $5.99</del><br />Now: $2.99
+        </td>
+        <td>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUtvCxsE7FwVpuJ9OSrQk1YHIa4Oz0uYWzyQ&s"
+            alt="Apple"
+          />
+        </td>
+        <td>
+          Name: Apple <br /><del>Original Price: $3.99</del><br />Now: $0.99
+        </td>
+        <td>
+          <img
+            src="https://dtgxwmigmg3gc.cloudfront.net/imagery/assets/derivations/icon/256/256/true/eyJpZCI6ImZjM2Q2MjliMTU0NmM1NWExMDNmZWVmMjg5ODJhNjU3LmpwZyIsInN0b3JhZ2UiOiJwdWJsaWNfc3RvcmUifQ?signature=fffaacd3f1fa417d29d117f9c1107413a173e463315b2564175b23a9b14daaf5"
+            alt="grape"
+          />
+        </td>
+        <td>
+          Name: Grape <br /><del>Original Price: $6.99</del><br />Now: $3.99
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+<!--1. align="center" 是过时的写法，建议使用 CSS
+align 这个属性已经被废弃，建议改用 CSS：
+h1 {
+  text-align: center;
+}
+table {
+  margin: auto; /* 让表格水平居中 */
+}-->

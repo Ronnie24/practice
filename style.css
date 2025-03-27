@@ -14,3 +14,108 @@ th,
 td {
   padding: 0.25rem;
 }
+
+/*所有html元素都有的属性：width height content padding border margin*/
+
+button.ex {
+  background-color: rgb(231, 131, 9);
+  /* padding-top: 2rem; */
+  /*上右下左 顺时针*/
+  padding: 2px 10px 6px 3px;
+  /*上下 左右*/
+  padding: 10px 20px;
+  transition: background-color 3.3s;
+}
+button.ex:hover {
+  background-color: red;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  border: 10px solid rgb(81, 33, 205); /*solid 实线条 dash 虚线*/
+  width: 10vw; /*viewport width 10%的viewport 会根据窗口的大小而改变*/
+  height: 50vh; /*viewport height */
+  width: 20%; /*相对与parent element的大小 是parent的20%*/
+}
+
+a.youtube {
+  /*inline element不能设定width和height*/
+  text-decoration: none;
+  background-color: aquamarine;
+  color: rgb(231, 18, 68);
+  padding: 7.5vh 6vw;
+  margin: 60px;
+}
+a:hover {
+  background-color: blue;
+}
+
+div.box1 {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+div.box2 {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  background-color: aqua;
+}
+
+/*display*/
+/*改变element为block或者inline*/
+/*block element可以设定宽度和高度 inline不行*/
+a.google {
+  background-color: cornflowerblue;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 90px 30px;
+  padding: 30px;
+}
+
+/*inline-block*/
+/*可以是inline也可以是block 符合inline的排版方式，符合block element宽度和高度排版方式*/
+/*一共5个元素：img input button select textarea*/
+
+/*position*/
+/*static relative absolute=>用的少 fixed sticky=>用的比较多*/
+/*具体代码在style.css*/
+/*static 静态排列*/
+/*relative 相对位置（相对于自己本身）*/
+/*absolute绝对位置*/
+/*fixed固定位置*/
+/*position: fixed; （固定定位）
+fixed 会让元素 固定在浏览器视口（viewport），不受滚动影响，始终停留在设定的位置。
+
+✅ 特点：
+
+相对于视口（浏览器窗口）固定，不随页面滚动改变位置。
+
+脱离文档流，不会占据原来的位置。
+
+适用于 固定导航栏、返回顶部按钮、模态框等。*/
+
+/*sticky（黏住）根据正常的排版规则*/
+/*position: sticky; （粘性定位）
+sticky 让元素在滚动到一定位置时固定，但在滚动前仍然处于正常流中。
+
+✅ 特点：
+
+介于 relative 和 fixed 之间。
+
+在 到达设定的 top、left、right 或 bottom 位置前，它是 relative 的（随正常文档流）。
+
+滚动到指定位置后，它变成 fixed，固定在设定的位置上。
+
+适用于 表头固定、侧边栏、滚动菜单等。*/
+
+/* fixed vs sticky 对比
+特性	           fixed (固定)	           sticky (粘性)
+相对定位	       相对于视口（窗口）	      相对于父元素
+是否脱离文档流	 是，不会占据原位置	      否，正常占位
+是否随滚动变化	 不会变动，一直固定	      滚动到某处才固定
+常见应用	      悬浮菜单、返回顶部按钮	  表头、侧边栏、滚动导航
+*/

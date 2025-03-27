@@ -1,0 +1,51 @@
+div.container {
+  width: 500px;
+  height: 2000px;
+  background-color: black;
+  /* position: relative; */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background-color: rgb(63, 67, 64);
+  position: sticky;
+  top: 100px;
+  left: 600px;
+}
+.box2 {
+  background-color: aqua;
+  position: relative;
+  left: 100px; /*相对于元素自己，左边空出200px的位置*/
+  top: 200px; /*在元素上方空出200px的位置*/
+  z-index: 2;
+}
+.box3 {
+  background-color: chartreuse;
+  position: relative;
+  top: 50px;
+  left: 150px;
+  z-index: 1;
+}
+.box4 {
+  background-color: brown;
+  position: absolute; /*在页面上的绝对位置（不包括上下滚动页面）*/
+  bottom: 0; /*与底部的距离为0*/
+  right: 0; /*与右边的距离为0*/
+}
+
+.box5 {
+  background-color: rgb(219, 20, 206);
+  position: fixed; /*相对于viewport（窗口）的位置 （包括上下滚动页面）*/
+  top: 0;
+  left: 150px;
+}
+
+.box6 {
+  background-color: rgb(219, 156, 10);
+  position: sticky;
+  top: 0;
+  left: 0px;
+}

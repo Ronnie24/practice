@@ -21,6 +21,7 @@ div.container {
   left: 100px; /*相对于元素自己，左边空出200px的位置*/
   top: 200px; /*在元素上方空出200px的位置*/
   z-index: 2;
+  transition: all 2s;
 }
 .box3 {
   background-color: chartreuse;
@@ -48,4 +49,19 @@ div.container {
   position: sticky;
   top: 0;
   left: 0px;
+  transition: all 1s;
+}
+
+.box6:hover {
+  background-color: cadetblue;
+  color: aliceblue;
+  transform: translate(100px, 200px); /*移动*/
+  transform: rotate(90deg); /*顺时针旋转90度*/
+  transform: scale(2); /*放大或缩小*/
+}
+
+/*3D transform*/
+.box2:hover {
+  background-color: rgb(235, 24, 9);
+  transform: rotateZ(90deg);
 }

@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  background-image: url("https://plus.unsplash.com/premium_photo-1742852349718-4f77d5f86b34?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-position: center; */
+  background-size: cover;
+  /* margin-top: 500px; */
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+.name,
+.pass {
+  margin-bottom: 10px; /* 增加间距 */
+}
+
+label {
+  display: inline-block; /* 让 label 变成块状 */
+  width: 100px; /* 让 label 统一宽度 */
+  text-align: right; /* 让 label 文字右对齐 */
+}
+
+input {
+  width: 200px; /* 设置输入框的宽度 */
+  padding: 5px;
+}
+
+div.container {
+  background-color: black;
+  width: 500px;
+  height: 700px;
+  border-radius: 10px; /*border的圆滑度*/
+  overflow: hidden;
+}
+
+div.box {
+  width: 100px;
+  height: 100px;
+}
+
+.b1 {
+  background-color: aqua;
+  animation-name: cross;
+  animation-duration: 4s;
+  position: relative;
+  /* animation-delay: 3s; */
+  /*animation-iteration-count: infinite;*/ /*循环播放*/
+  /*animation-direction: reverse;*/ /*反方向*/
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+}
+/*keyframes animation-name animation duration*/
+@keyframes cross {
+  from {
+    background-color: aqua;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background-color: green;
+    top: 900px;
+    left: 400px;
+  }
+}
+.b2 {
+  background-color: brown;
+}
+.b3 {
+  background-color: chartreuse;
+}
